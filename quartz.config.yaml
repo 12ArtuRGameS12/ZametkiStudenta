@@ -231,7 +231,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/12ArtuRGameS12/ZametkiStudenta
-        Не проверяй эту ссылку: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+        Туз-Никитоса: https://www.youtube.com/watch?v=dQw4w9WgXcQ
     layout:
       position: footer
       priority: 50

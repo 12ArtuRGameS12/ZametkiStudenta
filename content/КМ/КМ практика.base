@@ -7,7 +7,8 @@ views:
     name: Таблица
     order:
       - file.name
-      - проверенно
+      - проверено
     sort: []
     markers: number
     indentProperties: false
+    columnSize: {}

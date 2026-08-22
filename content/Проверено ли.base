@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.hasProperty("проверено")
+views:
+  - type: table
+    name: Таблица
+    groupBy:
+      property: проверено
+      direction: ASC
+    order:
+      - file.name
+      - проверено
+    sort:
+      - property: проверено
+        direction: ASC
+    columnSize: {}

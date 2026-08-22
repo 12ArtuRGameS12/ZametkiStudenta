@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Конспекты студента
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: ru-RU
   baseUrl: 12arturgames12.github.io/ZametkiStudenta
   ignorePatterns:
     - private
@@ -230,8 +230,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/12ArtuRGameS12/ZametkiStudenta
+        Не проверяй эту ссылку: https://www.youtube.com/watch?v=dQw4w9WgXcQ
     layout:
       position: footer
       priority: 50

@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "ФКС"
+    - file.name.contains("-Л-")
+views:
+  - type: table
+    name: Таблица
+    order:
+      - file.name
+      - проверенно
+    markers: number
+    indentProperties: false

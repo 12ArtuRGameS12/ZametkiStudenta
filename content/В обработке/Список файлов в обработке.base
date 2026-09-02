@@ -1,0 +1,10 @@
+views:
+  - type: table
+    name: Таблица
+    filters:
+      and:
+        - file.folder.contains("В обработке")
+        - file.ext == "md"
+    order:
+      - file.name
+    sort: []

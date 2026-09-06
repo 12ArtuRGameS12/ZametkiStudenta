@@ -1,10 +1,69 @@
+filters:
+  and:
+    - file.folder.contains("В обработке")
+    - file.ext == "md"
 views:
   - type: table
-    name: Таблица
-    filters:
-      and:
-        - file.folder.contains("В обработке")
-        - file.ext == "md"
+    name: Всё
     order:
       - file.name
     sort: []
+    indentProperties: false
+  - type: table
+    name: СФиТД
+    filters:
+      and:
+        - file.name.contains("СФиТД")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: МиМНТ
+    filters:
+      and:
+        - file.name.contains("МиМНТ")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: ОРФ
+    filters:
+      and:
+        - file.name.contains("ОРФ")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: ФХОТМНС
+    filters:
+      and:
+        - file.name.contains("ФХОТМНС")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: ЭМИ
+    filters:
+      and:
+        - file.name.contains("ЭМИ")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: Вне категории
+    filters:
+      and:
+        - '!file.name.contains("ЭМИ")'
+        - '!file.name.contains("ОРФ")'
+        - '!file.name.contains("МиМНТ")'
+        - '!file.name.contains("СФиТД")'
+        - '!file.name.contains("ФХОТМНС")'
+    order:
+      - file.name
+    sort: []
+    indentProperties: false

@@ -55,6 +55,24 @@ views:
     sort: []
     indentProperties: false
   - type: table
+    name: ТТЭ
+    filters:
+      and:
+        - file.name.contains("ТТЭ")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
+    name: АПЭМ
+    filters:
+      and:
+        - file.name.contains("АПЭМ")
+    order:
+      - file.name
+    sort: []
+    indentProperties: false
+  - type: table
     name: Вне категории
     filters:
       and:
@@ -63,6 +81,8 @@ views:
         - '!file.name.contains("МиМНТ")'
         - '!file.name.contains("СФиТД")'
         - '!file.name.contains("ФХОТМНС")'
+        - '!file.name.contains("ТТЭ")'
+        - '!file.name.contains("АПЭМ")'
     order:
       - file.name
     sort: []

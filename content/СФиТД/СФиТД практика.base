@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.folder == "СФиТД"
+    - file.name.contains("-П-")
+views:
+  - type: table
+    name: Таблица
+    order:
+      - file.name
+      - проверено
+    markers: number
+    indentProperties: false
+    columnSize: {}
